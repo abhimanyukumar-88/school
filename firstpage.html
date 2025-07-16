@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Reset and global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  line-height: 1.6;
+  background-color: #fdfdfd;
+  color: #333;
+}
+
+/* Navbar styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f4d23a;
+  padding: 15px 30px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: white;
+}
+
+.logo-img {
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  border-radius: 50%;
+  background-image: url(aa.png.jpg);
+  background-size: cover;
+}
+
+.logo h2 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #100e10;
+}
+
+/* Sections */
+.section {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+#home {
+  color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+  background-size: cover;
+   background-image: url(cc.png.jpg);
+   border: 2px solid rgb(0, 0, 0);
+ 
+}
+#home h1{
+  font-size: 3rem;
+  text-transform: capitalize;
+  text-decoration: solid;
+  color: #ffffff;
+}
+#home p{
+  text-decoration:wavy;
+  color: rgb(1, 22, 26);
+}
+
+#about, #services, #contact {
+  background-color: #f2f2f2;
+}
+
+.section h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.section p {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 18px;
+}
+
+/* Footer */
+footer {
+  background-color: #e2a60f;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    background-color: #004080;
+    width: 100%;
+    display: none;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+    color: white;
+    font-size: 24px;
+  }
+
+  .navbar {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo h2 {
+    font-size: 16px;
+  }
+
+  .section h2 {
+    font-size: 24px;
+  }
+
+  .section p {
+    font-size: 16px;
+  }
+}
+
+.gallery-section {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #fff;
+  
+}
+
+.gallery-section h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: #333;
+ 
+}
+
+.gallery-container {
+  display: grid;
+  grid-template-rows: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  max-width: 200px;
+  margin: 0 auto;
+   /* display: flex;
+  justify-content: space-evenly;
+  align-items: center; */
+}
+
+.gallery-item {
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+    border: 2px solid black;
+}
+
+.gallery-item:hover {
+  transform: scale(1.03);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+    </style>
+</head>
+<body>
+     <header class="navbar">
+    <div class="logo">
+        <div class="logo-img"></div>
+        <h2>PLAYMATE PUBLIC SCHOOL</h2>
+    </div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="chairman's message.html">Principal Message</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+ <section id="home" class="section">
+    <div class="img"></div>
+    <h1>we are providing the best education </h1>
+    <p>Scroll down to explore.</p>
+  </section>
+
+  
+  <section class="gallery-section">
+    <h2>Photo Gallery</h2>
+    <div class="gallery-container">
+      <div class="gallery-item">
+        <img src="bb.png.jpg" alt="Image 1">
+      </div>
+      <div class="gallery-item">
+        <img src="gg.png.jpg" alt="Image 2">
+      </div>
+      <div class="gallery-item">
+        <img src="hh.png.jpg" alt="Image 3">
+      </div>
+      <div class="gallery-item">
+        <img src="ii.png.jpg" alt="Image 4">
+      </div>
+      <div class="gallery-item">
+        <img src="jj.png.jpg" alt="Image 5">
+      </div>
+      <div class="gallery-item">
+        <img src="kk.png.jpg" alt="Image 6">
+      </div>
+      <div class="gallery-item">
+        <img src="ll.png.jpg" alt="Image 7">
+      </div>
+      <div class="gallery-item">
+        <img src="mm.png.jpg" alt="Image 8">
+      </div>
+      <div class="gallery-item">
+        <img src="nn.png.jpg" alt="Image 9">
+      </div>
+      <div class="gallery-item">
+        <img src="oo.png.jpg" alt="Image 10">
+      </div>
+      <div class="gallery-item">
+        <img src="pp.png.jpg" alt="Image 10">
+      </div>
+      <div class="gallery-item">
+        <img src="dd.png.jpg" alt="Image 10">
+      </div>
+      <div class="gallery-item">
+        <img src="ff.png.jpg" alt="Image 10">
+      </div>
+      <div class="gallery-item">
+        <img src="ee.png.jpg" alt="Image 10">
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 playmate public school. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js">
+    // Optional: Mobile toggle menu (add hamburger if needed)
+
+document.addEventListener("DOMContentLoaded", function () {
+  const nav = document.querySelector(".nav-links");
+
+  // Example toggle (add a button for hamburger if needed)
+  // document.querySelector(".hamburger").addEventListener("click", () => {
+  //   nav.classList.toggle("show");
+  // });
+});
+
+  </script>
+</body>
+</html>
